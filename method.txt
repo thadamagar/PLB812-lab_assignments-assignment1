@@ -1,0 +1,14 @@
+Genome fasta and gene annotation
+Following steps were taken to have genome fasta and gene annotation
+1. gff and fa.gz files for my assigned species were downloaded from the phytosome  (https://data.jgi.doe.gov/refine-download/phytozome?restoreid=173590)
+2. these files were uploaded to the hpcc using sftp command.
+3. these files were in gz format which was unzipped with gunzip command.
+4. first 10 lines were read using head n10 command.
+
+Fastq file
+Following steps were taken to have fastq files
+1. conda environment was created with SRA tool (hardest step for me)
+2. SRR files of my assigned spp. were then downloaded using Prefetch command.
+3. SRR files were converted into fastq format using fastq-dump command
+4. first 10 lines were read using n10 head command.
+
